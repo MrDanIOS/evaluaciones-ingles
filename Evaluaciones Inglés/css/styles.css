@@ -1,0 +1,192 @@
+/* Personalización visual para la app de evaluaciones */
+
+:root {
+  --bs-primary: #2563eb; /* Azul moderno */
+  --bs-primary-rgb: 37, 99, 235;
+}
+
+body {
+  background: linear-gradient(135deg, #f3f6fa 0%, #e0e7ff 100%);
+  min-height: 100vh;
+}
+
+.header-app {
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(37,99,235,0.08), 0 1.5px 4px rgba(0,0,0,0.04);
+  padding: 2.5rem 0 1.5rem 0;
+  margin-bottom: 2.5rem;
+  border-bottom-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.card {
+  margin-bottom: 2.2rem;
+}
+
+footer {
+  background: #fff;
+  border-top: 1.5px solid #e0e7ff;
+  box-shadow: 0 -2px 12px rgba(37,99,235,0.04);
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+h1, h4.card-title {
+  color: var(--bs-primary);
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
+  border: none;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+  font-weight: 600;
+  border-radius: 2rem;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background: linear-gradient(90deg, #1d4ed8 0%, #3b82f6 100%);
+  box-shadow: 0 4px 16px rgba(37,99,235,0.15);
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #e8f0fe;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+}
+
+/* Badge para destacar OA */
+.badge-oa {
+  background: #e0e7ff;
+  color: #3730a3;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  padding: 0.25em 0.75em;
+  font-size: 0.95em;
+}
+
+.modern-title {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #2563eb 0%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  letter-spacing: 1px;
+}
+
+/* Asegura que el acordeón de cursos esté siempre expandido */
+.accordion-collapse {
+  display: block !important;
+  opacity: 1 !important;
+  height: auto !important;
+}
+.accordion-button {
+  pointer-events: none;
+  background: #f3f6fa;
+  color: #2563eb;
+  font-weight: 600;
+} 
+
+/* FullCalendar custom styles */
+.fc {
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+.fc-toolbar-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #2563eb;
+  text-shadow: 0 1px 2px #fff, 0 0.5px 0 #e0e7ff;
+}
+.fc-button {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 1.5rem !important;
+  background: linear-gradient(90deg, #e0e7ff 0%, #60a5fa 100%) !important;
+  border: none !important;
+  color: #1e293b !important;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+  padding: 0.5em 1.5em;
+  margin: 0 0.2em;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.fc-button:hover, .fc-button:focus {
+  background: linear-gradient(90deg, #c7d2fe 0%, #3b82f6 100%) !important;
+  color: #1e293b !important;
+  box-shadow: 0 4px 16px rgba(37,99,235,0.15);
+}
+.fc-button-primary:not(:disabled).fc-button-active, .fc-button-primary:not(:disabled):active {
+  background: linear-gradient(90deg, #a5b4fc 0%, #2563eb 100%) !important;
+  color: #1e293b !important;
+}
+.fc-daygrid-day-number {
+  font-weight: 800;
+  color: #2563eb;
+  font-size: 1.25em;
+  text-shadow: 0 1px 2px #e0e7ff, 0 0.5px 0 #fff;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+.fc-daygrid-day-frame {
+  padding: 6px 4px 4px 4px !important;
+  border-radius: 0.7em;
+  border: 1.5px solid #e0e7ff;
+  background: #f8fafc;
+  margin: 2px;
+  box-shadow: 0 1px 4px rgba(37,99,235,0.04);
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.fc-daygrid-day:hover .fc-daygrid-day-frame {
+  border: 1.5px solid #2563eb;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+  background: #e0e7ff;
+}
+.fc-daygrid-event {
+  font-size: 1em;
+  border-radius: 0.5em;
+  background: linear-gradient(90deg, #2563eb 0%, #3b82f6 100%);
+  color: #fff;
+  font-weight: 700;
+  border: 2px solid #1e40af;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+  padding: 0.25em 0.7em;
+  text-shadow: 0 1px 2px #1e40af33;
+}
+.fc-icon {
+  color: #2563eb !important;
+  filter: drop-shadow(0 1px 1px #fff);
+} 
+
+.evento-evaluacion {
+  background: linear-gradient(90deg, #2563eb 0%, #3b82f6 100%) !important;
+  color: #fff !important;
+  font-weight: 700;
+  border: 2px solid #1e40af !important;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+  padding: 0.15em 0.5em !important;
+  font-size: 0.98em !important;
+  border-radius: 0.5em !important;
+  text-shadow: 0 1px 2px #1e40af33;
+  display: block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 auto 2px auto;
+  box-sizing: border-box;
+} 
